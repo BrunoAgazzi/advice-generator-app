@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root{
+    --Font1:'Manrope', sans-serif;
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+}
+
+html,body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: var(--DarkBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--Font1);
+}
+div{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--DarkGrayishBlue);
+    border-radius: 10px;
+    padding: 30px 50px 0;
+}
+h3{
+    color: var(--NeonGreen);
+    font-size: 14px;
+    letter-spacing: 5px;
+}
+h1{
+    text-align: center;
+    color: var(--LightCyan);
+    font-size: 22px;
+    font-weight: 800;
+
+}
+picture{
+    margin: 20px 0;
+}
+picture img{
+    margin: 0 auto;
+    width: 100%;
+}
+
+button{
+    padding: 18px 18px 16px 18px;
+    background-color: var(--NeonGreen);
+    border-radius: 35px;
+    border: none;
+    margin-bottom: -30px;
+}
+
+@media (max-width: 375px) {
+    div{
+        width: 85%;
+        padding: 30px 10px 0;
+
+    }
+}
+
+@media (min-width: 1445px) {
+    div{
+        width: 750px;
+        padding: 30px 10px 0;
+
+    }
+}
